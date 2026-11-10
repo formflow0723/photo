@@ -1,0 +1,8 @@
+{
+  "name": "인생4컷",
+  "description": "모바일 우선(390px) 단일 페이지 웹앱 인생4컷의 해시 라우팅 기반 레이아웃 및 화면 전환 프로토타입",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

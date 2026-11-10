@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --color-brand: #FF5C8A;
+  --color-brand-hover: #E84575;
+  --color-brand-light: #FFEBF1;
+  --color-surface: #FFF8F3;
+  --color-text-main: #222222;
+  --radius-custom: 16px;
+}
+
+:root {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  background-color: #1E1D20;
+}
+
+/* Clean mobile scrollbar behavior */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* iOS Safe Area Insets (노치 및 홈 바 지원) */
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+

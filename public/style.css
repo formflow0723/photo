@@ -1,0 +1,32 @@
+/* 인생4컷 PWA 및 모바일 Safe Area 스타일 */
+
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+/* 상단 노치 영역 패딩 (헤더) */
+.safe-top {
+  padding-top: max(0px, env(safe-area-inset-top));
+}
+
+/* 하단 홈 인디케이터 바 패딩 (GNB) */
+.safe-bottom {
+  padding-bottom: max(0px, env(safe-area-inset-bottom));
+}
+
+/* 좌우 베젤 패딩 */
+.safe-x {
+  padding-left: max(0px, env(safe-area-inset-left));
+  padding-right: max(0px, env(safe-area-inset-right));
+}
+
+/* iOS Safari 터치 하이라이트 및 드래그 방지 */
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  overscroll-behavior-y: none;
+}
